@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="wrap_content">
 
         <AutoCompleteTextView
             android:id="@+id/etCourseName"
@@ -42,7 +43,7 @@
             app:layout_constraintTop_toBottomOf="@+id/etCourseName" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnAddCourse"
             android:layout_width="103dp"
             android:layout_height="106dp"
             android:layout_marginStart="16dp"
@@ -53,5 +54,42 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/purple_200">
+
+    </View>
+
+    <ScrollView
+        android:id="@+id/scroolView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:id="@+id/rootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calculateAverage"
+        android:layout_gravity="center"
+        android:text="Calculate">
+
+    </Button>
 
 </LinearLayout>
+
+
+
+
+
+
+
