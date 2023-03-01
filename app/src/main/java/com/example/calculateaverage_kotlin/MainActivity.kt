@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.core.view.isEmpty
@@ -14,9 +15,16 @@ import kotlinx.android.synthetic.main.new_course_layout.*
 import kotlinx.android.synthetic.main.new_course_layout.view.*
 
 class MainActivity : AppCompatActivity() {
+
+    private val COURSES = arrayOf("Calculus","General Physics","Data Structure","Matematik","Kimya",
+    "Algorithm","Operating System")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        var adapter = ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,COURSES)
+        etCourseName.setAdapter(adapter)
 
         if(rootLayout.childCount==0){
             btnCalculate.visibility = View.INVISIBLE
