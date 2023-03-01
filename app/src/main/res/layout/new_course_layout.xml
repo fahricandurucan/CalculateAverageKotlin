@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etNewCourseName" />
 
     <Button
-        android:id="@+id/buttonNew"
+        android:id="@+id/buttonDelete"
         android:layout_width="103dp"
         android:layout_height="106dp"
         android:layout_marginStart="16dp"
