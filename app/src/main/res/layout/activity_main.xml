@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="@color/dark_purple"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,7 +18,12 @@
             android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
             android:hint="Ders Adı Giriniz"
+            android:popupBackground="@color/dark_yellow"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +34,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:entries="@array/krediler"
+            android:popupBackground="@color/dark_yellow"
             app:layout_constraintBottom_toBottomOf="@+id/spinnerNote"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etCourseName" />
@@ -39,16 +46,17 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:entries="@array/tumNotlar"
+            android:popupBackground="@color/dark_yellow"
             app:layout_constraintStart_toEndOf="@+id/spinnerKredi"
             app:layout_constraintTop_toBottomOf="@+id/etCourseName" />
 
         <Button
             android:id="@+id/btnAddCourse"
-            android:layout_width="103dp"
-            android:layout_height="106dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="52dp"
             android:layout_marginTop="8dp"
-            android:text="Button"
+            android:background="@drawable/adding"
             app:layout_constraintBottom_toBottomOf="@+id/spinnerNote"
             app:layout_constraintStart_toEndOf="@+id/etCourseName"
             app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +65,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="@color/purple_200">
+        android:background="@color/dark_yellow">
 
     </View>
 
@@ -81,8 +89,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@drawable/calculate_button"
         android:onClick="calculateAverage"
-        android:text="Calculate">
+        android:text="Calculate"
+        android:textSize="18sp">
 
     </Button>
 
