@@ -12,14 +12,14 @@
         android:layout_height="0dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="90dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cap" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonMain"
         android:layout_width="256dp"
         android:layout_height="75dp"
         android:layout_marginBottom="132dp"
