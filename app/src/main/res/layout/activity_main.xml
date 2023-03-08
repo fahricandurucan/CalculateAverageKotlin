@@ -59,7 +59,8 @@
             android:background="@drawable/adding"
             app:layout_constraintBottom_toBottomOf="@+id/spinnerNote"
             app:layout_constraintStart_toEndOf="@+id/etCourseName"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
@@ -72,7 +73,8 @@
     <ScrollView
         android:id="@+id/scroolView"
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="400dp"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:id="@+id/rootLayout"

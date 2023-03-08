@@ -15,7 +15,8 @@
         android:enabled="false"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Spinner
         android:id="@+id/spinnerNewKredi"
@@ -49,7 +50,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/spinnerNewNote"
         app:layout_constraintStart_toEndOf="@+id/etNewCourseName"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <View
         android:layout_width="0dp"
